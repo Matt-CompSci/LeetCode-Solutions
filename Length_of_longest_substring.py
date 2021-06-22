@@ -1,6 +1,9 @@
-# Calculate length of longest substring without repeating characters
+# Calculate max length of substring with none repeating characters
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        if len(s) == 1: return 1
+        if len(s) == 2: return s[0] != s[1] and 2 or 1
+        
         charList = list(s)
         maxSubstringLength = 0
         currentSubstringLength = 0
