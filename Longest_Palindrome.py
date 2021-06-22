@@ -1,3 +1,4 @@
+# Given a string s, return the longest palindromic substring in s.
 class Solution:
     def maxPalindromeAtPos(self, s, left, right):
         while left >= 0 and right < len(s) and s[left] == s[right]:
